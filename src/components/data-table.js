@@ -63,6 +63,22 @@ class DataTable extends HTMLElement {
           background-color: var(--blue-color); /* color of the scroll thumb */
           border-radius: 1rem; /* roundness of the scroll thumb */
         }
+
+        @media (max-width: 72rem) {
+          :host {
+            padding: 1rem;
+            max-height: 24.75rem;
+          }
+        }
+
+        @media (max-width: 48rem) {
+          :host {
+            padding: 1rem;
+            max-height: 26.75rem;
+            width: 100%;
+            margin-bottom: 1.25rem !important;
+          }
+        }
       </style>
       <table>
         <thead>

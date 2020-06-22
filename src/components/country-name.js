@@ -26,7 +26,7 @@ class CountryName extends HTMLElement {
         .country-name {
           background-color: var(--white-color);
           height: 5rem;
-          min-width: 25rem;
+          min-width: 22.5rem;
           text-transform: uppercase;
           letter-spacing: 0.25rem;
           display: flex;
@@ -37,6 +37,30 @@ class CountryName extends HTMLElement {
           font-weight: 600;
           align-items: center;
           border-radius: 1.25rem 0 0 1.25rem;
+        }
+
+        @media (max-width: 72rem) {
+          :host {
+            padding: 1.25rem 0;
+          }
+
+          .country-name {
+            height: 4rem;
+            min-width: 16.5rem;
+            font-size: 1.35rem;
+          }
+        }
+
+        @media (max-width: 72rem) {
+          :host {
+            padding: 1.25rem 0;
+          }
+
+          .country-name {
+            height: 3.25rem;
+            min-width: 10.5rem;
+            font-size: 1rem;
+          }
         }
       </style>
       <div class="country-name">

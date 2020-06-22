@@ -48,6 +48,26 @@ export default class SearchBar extends HTMLElement {
         padding: 0 0.5rem 0 2rem;
         font-size: 1rem;
       }
+
+      @media (max-width: 72rem) {
+        :host {
+          width: 15rem;
+        }
+
+        form > input {
+          width: 15rem;
+        }
+      }
+
+      @media (max-width: 48rem) {
+        :host {
+          width: 10rem;
+        }
+
+        form > input {
+          width: 10rem;
+        }
+      }
       </style>
       <form id="searchForm">
         <img alt="icon-search" src="${searchIcon}" />

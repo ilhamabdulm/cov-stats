@@ -53,6 +53,21 @@ export class StatusCard extends HTMLElement {
         width: 4rem;
         height: 4rem;
       }
+
+      @media (max-width: 72rem) {
+        :host {
+          height: 3.5rem;
+        }
+
+        p {
+          font-size: 1.25rem;
+        }
+
+        img {
+          width: 3rem;
+          height: 3rem;
+        }
+      }
     </style>
     <div>
       <img alt="icon" src="${this._icon}" />
