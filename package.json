@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
-    "moment": "^2.27.0",
+    "moment": "^2.29.2",
     "regenerator-runtime": "^0.13.5"
   }
 }
